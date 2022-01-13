@@ -5,7 +5,7 @@ const fs = require("fs");
 const path = require("path");
 const filePath = path.join(__dirname, "destroyWb.txt");
 
-const HEADERS = process.env.HEADERS;
+const HEADERS = JSON.parse(process.env.HEADERS_STRING);
 
 const getIdArr = (index) => {
     const url =
